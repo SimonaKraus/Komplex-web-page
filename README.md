@@ -1,2 +1,2 @@
-# Komplexn-webov-str-nky
+# Komplex-web-page
 Komplexní jednostránkový web 
