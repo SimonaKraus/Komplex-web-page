@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- <Simona Krausová> -->
+  <!-- <s.krausova@atlas.cz> -->
+  <!-- <SimonaK.> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="query-style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3a01bdab87.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Objev Nový Zéland</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#explore">Co vidět</a></li>
+          <li><a href="#tip">Více tipů</a></li>
+          <li><a href="#by-car">Chci vyrazit autem</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
+      <div class="button-wrapper">
+        <button class="theme" onclick="myFunction()">Změnit režim</button>
+      </div>
+      <h1 class="title">Zažít Nový Zéland</h1>
+    </header>
+
+    <section class="explore" id="explore">
+      <div class="explore-wrapper">
+        <div class="txt-wrapper">
+          <h2 class="explore-title">Nový Zéland - Země plná dobrodružství</h2>
+          <p class="explore-text">
+            Různorodá země plná mohutných hor, krásných pláží, lesů a pralesů,
+            plání a pouští. Najdete zde opravdu vše, co vás napadne. Kromě
+            spousty adrenalinových sportů, které je zde možné vyzkoušet, si
+            můžete projít ty nejkrásnější treky z celého světa, u nichž budete
+            ohromeni krásou místní přírody. Matka příroda si tu opravdu vyhrála!
+          </p>
+        </div>
+        <div class="photo-wrapper">
+          <div class="explore-photo-one">
+            <img src="img/Skippers_Canyon.jpg" alt="Skipper Canyon" />
+          </div>
+          <div class="explore-photo-two">
+            <img src="img/Queen3.jpg" alt="Queenstown" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tip" id="tip">
+      <div class="tip-wrapper">
+        <div class="tip-img">
+          <img
+            src="img/Kaikoura-map-removebg-preview.png"
+            alt="Map New Zealand"
+          />
+        </div>
+        <div class="tip-text">
+          <h2>Co si opravdu nenechat ujít</h2>
+          <p>
+            Nový Zéland skýtá nekonečné možnosti míst, která zde můžeš vidět. Je
+            známý především pro své přírodní bohatství a opravdu na obou
+            ostrovech najdeš místa, která jsou skoro k neuvěření.
+          </p>
+          <button class="btn-tip"><a href="#">Chci další tipy</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-wrapper">
+        <img class="img1" src="img/aoraki.jpg" alt="Aoraki" />
+        <img class="img2" src="img/quue.jpg" alt="Aurora borealis" />
+        <img class="img3" src="img/wanaka.jpg" alt="Wanaka" />
+        <img class="img4" src="img/pancake rock.jpg" alt="Pancake rocks" />
+        <img class="img5" src="img/fiorland.jpg" alt="Fiorland" />
+        <img class="img6" src="img/Glenorchy4.jpg" alt="Glenorchy lake" />
+      </div>
+    </section>
+
+    <section class="by-car" id="by-car">
+      <div class="car-wrapper">
+        <div class="car-text-wrap">
+          <h2 class="car-title">Zamluvit auto</h2>
+          <p class="car-text">
+            Chystáte se na Nový Zéland a uvažujete o půjčení auta? Chcete získat
+            během dovolené maximální flexibilitu a navštívit co nejvíce
+            zajímavých míst? Auto je vhodné rezervovat v dostatečném časovém
+            předstihu.
+          </p>
+        </div>
+
+        <div class="car-img">
+          <img class="car" src="img/Queen2.jpg" alt="Rent car on NZ" />
+        </div>
+      </div>
+
+      <div class="form">
+        <div class="username">
+          <input type="text" name="username" placeholder="Uživatelské jméno" />
+        </div>
+        <div class="pass">
+          <input
+            id="pass"
+            type="password"
+            name="pass"
+            placeholder="Heslo"
+            required
+          />
+          <input
+            id="confirm_pass"
+            type="password"
+            name="confirm_pass"
+            placeholder="Heslo znovu"
+            required
+            onkeyup="validate_password()"
+          />
+        </div>
+        <span id="wrong_pass_alert"></span>
+        <div class="buttons">
+          <button id="create" class="submit_btn" onclick="wrong_pass_alert()">
+            Potvrdit
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <h3 class="contact"><a href="">Kontakt</a></h3>
+        <p>Ochrana osobních údajů.</p>
+      </div>
+      <button onclick="topFunction()" class="topBtn" title="Zpět nahoru">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

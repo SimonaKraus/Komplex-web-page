@@ -1,0 +1,90 @@
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    margin: 12px 0;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    color: black;
+    font-size: 38px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+@media (max-width: 789px) {
+  .explore-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 40px;
+  }
+
+  .explore-title {
+    line-height: 2;
+  }
+
+  .tip-text {
+    line-height: 2;
+  }
+
+  .tip-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+
+  .car-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1500px) {
+  .gallery-wrapper img {
+    display: flex;
+    flex-basis: calc(80% / 3);
+  }
+}
+
+@media (max-width: 838px) {
+  .car-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
